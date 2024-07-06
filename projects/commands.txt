@@ -1,0 +1,7 @@
+- new project - ng new <project_name> --no-strict --standalone false --routing false
+
+- install bootstrap by npm - npm install --save bootstrap@3
+
+- adding a new component by cli - ng generated component <component_name> || ng g c <component_name>
+
+- adding a new component with no tests archives - ng g c <component_name> --skip-tests

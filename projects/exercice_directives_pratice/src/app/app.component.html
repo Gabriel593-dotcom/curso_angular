@@ -1,0 +1,10 @@
+<button (click)="onClickButton()">Display Details</button>
+
+
+<p *ngIf="paragraphShouldAppear">hello world!</p>
+
+<ul>
+  <li *ngFor="let logItem of log; let i = index" 
+  [ngStyle]="{backgroundColor: i > 4 ? 'blue' : 'transparent'}"
+  [ngClass]="{logItemClass: i > 4}">{{ logItem }}</li>
+</ul>

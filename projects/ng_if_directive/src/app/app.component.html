@@ -1,0 +1,5 @@
+<p *ngIf="shouldAppear; else notShouldAppear">Somente se puder aparecer</p>
+
+<ng-template #notShouldAppear >
+  <p>Elemente não pode aparecer.</p>
+</ng-template>

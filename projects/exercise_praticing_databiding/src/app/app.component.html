@@ -1,0 +1,8 @@
+<input type="text"
+[(ngModel)]="text"
+(input)="onInputWrite()"
+/>
+
+<p>{{ text }}</p>
+
+<button [disabled]="btnDisabled" (click)="onBtnClick()">Erase text</button>
