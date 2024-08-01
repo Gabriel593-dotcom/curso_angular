@@ -1,0 +1,10 @@
+<app-gamecontrol class="gamecontrol" (gameTime)="receiveGameTime($event)"></app-gamecontrol>
+
+<div class="number" *ngFor="let component of components">
+    <div *ngIf="component.type == 'Odd'">
+        <app-odd [oddNumber]="component.time"></app-odd>
+    </div>
+    <div *ngIf="component.type == 'Even'">
+        <app-even [evenNumber]="component.time"></app-even>
+    </div>
+</div>

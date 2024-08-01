@@ -1,0 +1,29 @@
+body {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.btn {
+   width: 60px;
+   height: 40px; 
+   font-family: Arial, Helvetica, sans-serif;
+   border: none;
+   margin: 30px;
+   cursor: pointer;
+}
+
+.btn-ok {
+    background-color: #006400;
+    color: #fff;
+}
+
+.btn-ok-disabled {
+    background-color: #4F4F4F;
+    color: #fff;
+}
+
+.btn-danger {
+    background-color: #B22222;
+    color: #fff;
+}

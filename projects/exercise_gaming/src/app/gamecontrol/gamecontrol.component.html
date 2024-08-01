@@ -1,0 +1,9 @@
+<button 
+class="btn"
+(click)="startGame()" 
+[disabled]="disabled" 
+[ngClass]="{'btn-ok': !disabled, 'btn-ok-disabled': disabled}">START</button>
+
+<button 
+class="btn btn-danger" 
+(click)="stopGame()">STOP</button>

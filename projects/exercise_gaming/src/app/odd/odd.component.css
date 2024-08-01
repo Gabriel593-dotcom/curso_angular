@@ -1,0 +1,13 @@
+.odd {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 80px;
+    height: 50px;
+    background-color: #B22222;
+}
+
+.odd p {
+    font-family: Arial, Helvetica, sans-serif;
+    color: #fff;
+}
