@@ -16,4 +16,8 @@ export class ShoppingListComponent {
   constructor() {}
 
   ngOnInit() {}
+
+  addIngridient(ingridient: Ingridient): void {
+    this.ingridients.push(ingridient);
+  }
 }
