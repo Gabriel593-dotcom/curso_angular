@@ -1,0 +1,35 @@
+
+.dropdown {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    cursor: pointer;
+}
+
+.dropdown .dropdown_title::after {
+    content: "\02C5";
+    margin-left: 10px;
+    height: 1px;
+}
+
+.dropdown.open .dropdown_title::after {
+    content: "\02C4";
+    margin-left: 10px;
+    height: 1px;
+}
+
+.dropdown .dropdown_options {
+    display: none;
+}
+
+.dropdown.open .dropdown_options {
+    display: inline;
+}
+
+.dropdown_option_item {
+    list-style-type: none;
+}
+
+.dropdown_option_item a {
+    text-decoration: none;
+}
