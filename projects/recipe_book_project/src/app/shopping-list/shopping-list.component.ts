@@ -1,23 +1,23 @@
 import { Component } from '@angular/core';
 import { Ingridient } from '../shared/ingridient.model';
+import { ShoppingListService } from './shopping-list.service';
 
 @Component({
   selector: 'app-shopping-list',
   templateUrl: './shopping-list.component.html',
-  styleUrl: './shopping-list.component.css'
+  styleUrl: './shopping-list.component.css',
 })
 export class ShoppingListComponent {
-  ingridients: Array<Ingridient> = [
-    new Ingridient('Apples', 5),
-    new Ingridient('Tomatoes', 10)
+  
+  ingridients: Ingridient[];
 
-  ];
+  constructor(private shoppingListService: ShoppingListService) {}
 
-  constructor() {}
-
-  ngOnInit() {}
+  ngOnInit() {
+    this.ingridients = this.shoppingListService.getIgridients();
+  }
 
   addIngridient(ingridient: Ingridient): void {
-    this.ingridients.push(ingridient);
+    this.shoppingListService.addIngridient(ingridient); 
   }
 }
