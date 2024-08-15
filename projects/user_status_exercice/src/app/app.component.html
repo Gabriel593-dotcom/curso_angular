@@ -1,0 +1,15 @@
+<h3>Active Users</h3>
+<app-active-users 
+*ngFor="let actUser of activeUsers"
+[actUser]="actUser"
+>
+</app-active-users>
+
+<br>
+<br>
+
+<h3>Inactive Users</h3>
+<app-inactive-users 
+*ngFor="let inactUser of inactiveUsers"
+[inactUser]="inactUser">
+</app-inactive-users>

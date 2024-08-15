@@ -1,0 +1,15 @@
+.active-user {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    height: 26px;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    margin-top: 0;
+    margin-bottom: 0;
+}
+
+.active-user a {
+    text-decoration: none;
+    margin-left: 1%;
+    cursor: pointer;
+}
