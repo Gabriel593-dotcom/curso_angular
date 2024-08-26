@@ -15,9 +15,12 @@ export class ShoppingListComponent {
 
   ngOnInit() {
     this.ingridients = this.shoppingListService.getIgridients();
+    this.shoppingListService.ingridientsChanged.subscribe((ingridients: Ingridient[]) => {
+      this.ingridients = ingridients;
+    }); 
   }
 
   addIngridient(ingridient: Ingridient): void {
-    this.shoppingListService.addIngridient(ingridient); 
+    this.shoppingListService.addIngridient(ingridient);
   }
 }
