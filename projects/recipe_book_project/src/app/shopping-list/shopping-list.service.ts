@@ -1,16 +1,17 @@
-import { EventEmitter } from "@angular/core";
+import { EventEmitter, OnInit } from "@angular/core";
 import { Ingridient } from "../shared/ingridient.model";
 
-export class ShoppingListService {
+export class ShoppingListService  {
     ingridientsChanged = new EventEmitter<Ingridient[]>();
-    private ingridients: Array<Ingridient> = [
-        new Ingridient('Apples', 5),
-        new Ingridient('Tomatoes', 10)
-    ];
+    private ingridients: Ingridient[]; 
 
     getIgridients() {
         return this.ingridients.slice();
     } 
+    
+    setIgridients(ingridients: Ingridient[]) {
+        this.ingridients = ingridients;
+    }
 
     addIngridient(ingridient: Ingridient): void {
         this.ingridients.push(ingridient);
